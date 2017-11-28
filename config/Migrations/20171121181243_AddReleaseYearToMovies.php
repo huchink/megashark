@@ -13,9 +13,8 @@ class AddReleaseYearToMovies extends AbstractMigration
     public function change()
     {
         $table = $this->table('movies');
-        $table->addColumn('releaseyear', 'integer', [
+        $table->addColumn('releaseyear', 'datetime', [
             'default' => null,
-            'limit' => 11,
             'null' => false,
         ]);
         $table->update();
