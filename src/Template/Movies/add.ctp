@@ -17,9 +17,9 @@
     <fieldset>
         <legend><?= __('Add Movie') ?></legend>
         <?php
-            echo $this->Form->control('name');
-            echo $this->Form->control('description');
-            echo $this->Form->control('duration');
+            echo $this->Form->control('Name');
+            echo $this->Form->control('Description');
+            echo $this->Form->control('Duration');
             echo $this->Form->control('Release Year');
         ?>
     </fieldset>
